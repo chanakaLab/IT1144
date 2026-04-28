@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            gap: 5px;
+            
+        }
+        
+        .items{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        /* 
+        repeat() repeats values
+        
+        repeat(3, 50px) => 50px 50px 50px
+        
+        minmax() gives min max range
+        
+        auto-fit gives auto fitting columns
+        
+        */
+
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>

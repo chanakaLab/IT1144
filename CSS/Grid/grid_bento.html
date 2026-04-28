@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page title</title>
+    
+    <style>
+        #container{
+            height: 150px;
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px;
+            grid-template-rows: 50px 50px;
+            grid-template-areas:"box-1 box-2 box-2" "box-1 box-3 box-4" "box-5 box-5 box-4";
+            gap: 5px;
+        }
+        
+        
+        .items{
+            background-color: blue;
+        }
+        
+        
+       /*
+       
+        can use grid-auto-columns:; and grid-auto-rows:; to automate in things like @media query.
+       */ 
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+        <div class="items" style="grid-area: box-1;">1</div>
+        <div class="items" style="grid-area: box-2;">2</div>
+        <div class="items" style="grid-area: box-3;">3</div>
+        <div class="items" style="grid-area: box-4;">4</div>
+        <div class="items" style="grid-area: box-5;">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <style>
+        #container{
+            height: 300px;
+            display: grid;
+            grid-template-columns: 100px 100px 50px;
+            grid-template-rows: 100px 100px 50px;
+            gap: 10px;
+        }
+        .items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: blue;
+            border-radius: 10px;
+        }
+        
+        /* you don't need to provide height and width to items, it adjusts with grid-template-columns:; and grid-template-rows:;
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+</body>
+</html>
