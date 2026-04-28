@@ -1,0 +1,84 @@
+*{
+    font-family: times;
+}
+body{
+
+    background-color: grey;
+
+}
+
+.dv{ 
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+}
+
+.dv1{
+    background-color: red;
+}
+.dv2{
+    background-color: green;
+}
+
+.dv3{
+    background-color: blue;
+}
+
+h1.top{
+    color: green;
+}
+
+.fh1.btm{
+    color: red;
+}
+
+.thf#thrd{
+    color: blue;
+}
+h1.thf#frth{
+    color: yellow;
+}
+
+div h1{
+    margin-left: 60px;
+    color: purple;
+}
+
+
+div.cots h2#sbhd{
+    color: orange;
+}
+
+#cont1, #cont2{
+    width: 100px;
+    height: 60px;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+#sbhd2{
+    font-size: 40px;
+    color: rgba(255, 255, 0, .5)
+}
+
+
+#scl{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    margin: 20px;
+    padding-top: 75px;
+    font-size: 20px;
+}
+
+
+#inscl{
+    width: 150px;
+    height: 1em;
+    background-color: lightblue;
+    margin-left: 75px;
+}
+
+
+

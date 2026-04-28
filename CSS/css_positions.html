@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positions</title>
+        <style>
+            #container{
+                background-color: lightblue;
+                width: 500px;
+                height: 300vh;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .dv{
+                width: 480px;
+                height: 60px;
+                background-color: yellow;
+                padding: 5px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+            #dv1{
+                background-color: rgb(11, 177, 25);
+                position: sticky;
+                top: 0px;
+            }
+            #dv2{
+                background-color: rgb(15, 223, 171);
+                
+            }
+            #dv3{
+                background-color: rgb(167, 185, 3);
+            }
+            /*
+            Default position is static
+            static - folows order in html code below
+            relative - gets out of document order and moves according
+                       to left, right, top, bottom relative to other
+                       elements, doesn't affect other elements
+            absolute - other elements ignores absolute positioned
+                       element. other element follows given css 
+                       order. absolute positioned element comes to 
+                       top. goes to relatively closest parent
+                       element that has a position other than
+                       static
+            fixed - stays fixed when scrolling, becomes
+                    becomes relative to page
+            
+            sticky - stays normal when scrolling until hits top
+                     acts as fixed after hits top
+            
+            */
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1>Parent</h1>
+            <div class="dv" id="dv1"><h2>Child 1</h2></div>
+            <div class="dv" id="dv2"><h2>Child 2</h2></div>
+            <div class="dv" id="dv3"><h2>Child 3</h2></div>
+        </div>
+    </body>
+</html>
