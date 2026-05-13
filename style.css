@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+}
+
+#chld{
+    width: 150px;
+    height: 150px;
+    background-color: #40ffb6;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    
+}
+
+
+
