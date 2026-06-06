@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Registration</title>
+		<style>
+			body{
+				font-family: sans-serif;
+				background-color: #f0f4f8;
+				padding: 40px;
+				margin: 0;
+			}
+			h1{
+				color: #3486eb;
+				font-size: 1.6rem;
+				margin-bottom: 24px;
+			}
+			div{
+				width: 300px;
+				height 1000px;
+				background-color: white;
+				padding: 10px;
+				border-radius: 10px;
+				font-size: 20px;
+			}
+			input{
+				font-size: 20px;
+				margin: 5px;
+			}
+			label{
+				margin: 10px;
+			}
+			select{
+				font-size: 20px;
+				margin:5px;
+			}
+			textarea{
+				font-size: 20px;
+				margin: 5px;
+				margin-left: 20px;
+			}
+			#btn{
+				width:100px;
+				height: 40px;
+				margin-left: 90px;
+				background-color: #0a9afa;
+				border: 0px;
+				border-radius: 5px;
+				transform: all 0.3s ease 0.4;
+			}
+			#btn:active{
+				font-size: 18px;
+				background-color: #0680d1;
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+	
+		<h1>Student Registration Form</h1>
+		<div>
+			<form>
+				<label>Full name</label><br>
+				<input type="text" id="name" placeholder="Enter your full name"><br>
+				
+				<label>E-mail</label><br>
+				<input type="email" placeholder="abc@xyz.com" id="eml"><br>
+				
+				<label>Password</label><br>
+				<input type="password" id="pwd" placeholder="Minimum 8 Characters"><br>
+				
+				<label>Age</label><br>
+				<input type="number" id="age" placeholder="Above 18 only"><br>
+				
+				<label>Phone Number</label><br>
+				<input type="tel" id="mob" placeholder="Your phone number"><br>
+				
+				<label>Gender</label><br>
+				<label><input type="radio" name="gender" value="M"> Male<label><br>
+				<label><input type="radio" name="gender" value="F"> Female<label><br>
+				<label><input type="radio" name="gender" value="O"> Prefer not to say<label><br>
+				
+				<label>Skills</label><br>
+				<label><input type="checkbox" name="skills" id="html" value="html" > HTML</label>
+				<label><input type="checkbox" name="skills"   value="python"> Python</label><br>
+				<label><input type="checkbox" name="skills" value="java"> Java</label>
+				<label><input type="checkbox" name="skills" value="cpp"> C++</label><br>
+				
+				
+				<select id="year">
+					<option value="none">--select year--</option>
+					<option value="1">1st Year</option>
+					<option value="2">2nd Year</option>
+					<option value="3">3rd Year</option>
+					<option value="4">4th Year</option>
+				</select><br>
+				
+				<label>About you</label><br>
+				<textarea rows=5 style="resize: none;" placeholder="Tell us about you" id="abt"></textarea>
+				
+				<br><input id="btn" type="submit" onclick=createObj()>
+			</form>
+		</div>
+		
+		<script>
+		    function createObj(){
+		        let name = document.getElementById("name").value;
+		        let email = document.getElementById("eml").value;
+		        let pwd = document.getElementById("pwd").value;
+		        let age = document.getElementById("age").value;
+		        let mobile = document.getElementById("mob").value;
+		       
+		        let gender_inp = document.querySelector("input[name='gender']:checked");
+		        let gender = "";
+		        if(gender_inp != null){
+		            gender = gender_inp.value;
+		        }
+		        
+		        let skill_bxs = document.querySelectorAll("input[name='skills']:checked");
+		        
+		        let year = document.getElementById("year").value;
+		        
+		        let skills = [];
+		        
+		        if(skill_bxs != null){
+		            let skill_inp_ar = Array.from(skill_bxs);
+		            let cnt = 0;
+		            for(let inp of skill_inp_ar){
+		                skills[cnt] = inp.value;
+		                cnt++;
+		            }
+		        }
+		        
+		        
+		        
+		        let student = {
+		            name:name,
+		            email:email,
+		            password:pwd,
+		            age:age,
+		            year: year,
+		            mobileNum:mobile,
+		            gender:gender,
+		            skills:skills
+		        }
+		        
+		        
+		        
+		    }
+		</script>
+		
+	</body>
+
+</html>
